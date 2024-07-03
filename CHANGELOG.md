@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.2](https://github.com/camptocamp/docker-odyssey/compare/v1.5.1...v1.5.2) (2024-07-03)
+
+
+### Bug Fixes
+
+* trigger build on all tags ([329b1c6](https://github.com/camptocamp/docker-odyssey/commit/329b1c6ed84c45c7e4bd37b8ae987d98da9c1a3c))
+
+
+### Miscellaneous Chores
+
+* release 1.5.2 ([44a1d23](https://github.com/camptocamp/docker-odyssey/commit/44a1d230a52daefba4a2a879784e30a1064fbd81))
+
 ## [1.5.1](https://github.com/camptocamp/docker-odyssey/compare/v1.5.0...v1.5.1) (2024-07-03)
 
 
