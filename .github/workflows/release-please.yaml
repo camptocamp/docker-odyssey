@@ -28,7 +28,6 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build Image Odyssey
         uses: docker/build-push-action@v2
-        if: ${{ steps.release_please.outputs.release_created }}
         with:
           context: .
           platforms: linux/amd64
