@@ -26,3 +26,21 @@
 ### Miscellaneous Chores
 
 * release 1.5.1 ([193651b](https://github.com/camptocamp/docker-odyssey/commit/193651b11c492139c1f4003fb405ab90f82e9243))
+1.5.0 (08-08-2023)
++++++++++++++++++++
+
+* fix: Add Certificate end date storing, for external tests
+* feat: switch from debian bulleye -> debian bookworm
+* fix: remove deb file in /tmp
+* feat: include sample odyssey config file 
+
+1.4.0 (23-03-2023)
++++++++++++++++++++
+
+* feat: add prometheus logs
+
+1.3.0 (30-01-2023)
++++++++++++++++++++
+
+* Deploy: Odyssey 1.3 + User odyssey
+* New github workflow
