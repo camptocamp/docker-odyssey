@@ -13,6 +13,7 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
     - uses: "googleapis/release-please-action@v4"
+      id: "release"
       with:
         release-type: "simple"
   build-images:
@@ -32,4 +33,4 @@ jobs:
           context: .
           platforms: linux/amd64
           push: true
-          tags: ghcr.io/${{ github.repository }}:${{ steps.release-please.outputs.tag_name }}
+          tags: ghcr.io/${{ github.repository }}:${{ steps.release.outputs.tag_name }}
