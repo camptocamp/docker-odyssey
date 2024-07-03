@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.4](https://github.com/camptocamp/docker-odyssey/compare/v1.6.3...v1.6.4) (2024-07-03)
+
+
+### Bug Fixes
+
+* move all actions into a single one with multiples steps ([a88c483](https://github.com/camptocamp/docker-odyssey/commit/a88c4833b123469c908c6850af3e8acb31cb8cca))
+
 ## [1.6.3](https://github.com/camptocamp/docker-odyssey/compare/v1.6.2...v1.6.3) (2024-07-03)
 
 
