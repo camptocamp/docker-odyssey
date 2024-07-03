@@ -26,6 +26,10 @@ latest (unreleased)
 **Bugfixes**
 
 **Build**
+1.5.1 (08-08-2023)
++++++++++++++++++++
+
+* fix: add root certificate for new postgresql flexible server 
 
 1.5.0 (08-08-2023)
 +++++++++++++++++++
