@@ -12,25 +12,24 @@ jobs:
   release-please:
     runs-on: "ubuntu-latest"
     steps:
-    - uses: "googleapis/release-please-action@v4"
+    - name: Release create
+      uses: "googleapis/release-please-action@v4"
       id: "release"
       with:
         release-type: "simple"
-  build-images:
-    runs-on: ubuntu-latest
-    needs: release-please
-    steps:
-      - uses: actions/checkout@v2
-      - name: Login to GHCR
-        uses: docker/login-action@v1
-        with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build Image Odyssey
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          platforms: linux/amd64
-          push: true
-          tags: ghcr.io/${{ github.repository }}:${{ steps.release.outputs.tag_name }}
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Ghcr login
+      uses: docker/login-action@v1
+      with:
+        registry: ghcr.io
+        username: ${{ github.repository_owner }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+    - name: Build Image Odyssey
+      if: ${{ steps.release.outputs.release_created }}
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        platforms: linux/amd64
+        push: true
+        tags: ghcr.io/${{ github.repository }}:${{ steps.release.outputs.tag_name }}
