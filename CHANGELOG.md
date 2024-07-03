@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.2](https://github.com/camptocamp/docker-odyssey/compare/v1.6.1...v1.6.2) (2024-07-03)
+
+
+### Bug Fixes
+
+* trigger build on every github action run ([a5461f4](https://github.com/camptocamp/docker-odyssey/commit/a5461f449def73d1eaf4daecc15bf76b4306dcaf))
+
 ## [1.6.1](https://github.com/camptocamp/docker-odyssey/compare/v1.6.0...v1.6.1) (2024-07-03)
 
 
