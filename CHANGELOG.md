@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/camptocamp/docker-odyssey/compare/v1.6.0...v1.6.1) (2024-07-03)
+
+
+### Bug Fixes
+
+* add output release manager for image tag ([564d564](https://github.com/camptocamp/docker-odyssey/commit/564d5640e96b7c61e1b0e63f6e3fa8b9040c8c0b))
+
 ## [1.6.0](https://github.com/camptocamp/docker-odyssey/compare/v1.5.2...v1.6.0) (2024-07-03)
 
 
