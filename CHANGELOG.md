@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.3](https://github.com/camptocamp/docker-odyssey/compare/v1.6.2...v1.6.3) (2024-07-03)
+
+
+### Bug Fixes
+
+* set id on release trigger ([b6ce1e9](https://github.com/camptocamp/docker-odyssey/commit/b6ce1e97cb4ba80b2a05495519c6404a3f958852))
+
 ## [1.6.2](https://github.com/camptocamp/docker-odyssey/compare/v1.6.1...v1.6.2) (2024-07-03)
 
 
