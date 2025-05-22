@@ -15,17 +15,10 @@ RUN set -ex \
     ca-certificates \
     libmicrohttpd-dev \
     libssl-dev \
-    && curl -L https://github.com/digitalocean/prometheus-client-c/releases/download/v0.1.3/libprom-dev-0.1.3-Linux.deb -o /tmp/libprom-dev-0.1.3-Linux.deb \
-    && curl -L https://github.com/digitalocean/prometheus-client-c/releases/download/v0.1.3/libpromhttp-dev-0.1.3-Linux.deb -o /tmp/libpromhttp-dev-0.1.3-Linux.dev \
     && cat /etc/ssl/certs/DigiCert_Global_Root_CA.pem /etc/ssl/certs/DigiCert_Global_Root_G2.pem /etc/ssl/certs/Microsoft_RSA_Root_Certificate_Authority_2017.pem > /postgresql_root.crt \
-    && dpkg --install /tmp/libprom-dev-0.1.3-Linux.deb \
-    && dpkg --install /tmp/libpromhttp-dev-0.1.3-Linux.dev \
-    && git clone --depth 1 --branch 1.3 http://github.com/yandex/odyssey.git \
+    && git clone --depth 1 --branch 1.4rc7 http://github.com/yandex/odyssey.git \
     && cd odyssey \
-    && mkdir build \
-    && cd build \
-    && cmake -DCMAKE_BUILD_TYPE=Release .. \
-    && make \
+    && make build_release\
     && apt-get remove -y  build-essential \
     cmake \
     git \
